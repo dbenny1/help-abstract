@@ -23,6 +23,7 @@ header {
     font-weight: 550;
     position: fixed;
     z-index: 1;
+    width: 100%;
 }
 .container-header {
     width: 90%;
