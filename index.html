@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstract</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheet/index.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheet/responsive.css">
+    <link rel="icon" type="image/x-icon" href="/images/abstract-favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap" rel="stylesheet">
@@ -13,142 +15,157 @@
 </head>
 <body>
     <header>
-        <div class="container-header">
-            <div class="logo">
-                <a href="https://www.abstract.com/" target="_blank"><i class="fa-brands fa-autoprefixer"></i> Abstract | </a>
-                <a href="index.html">Help Center</a>
+        <div class="header-cont">
+            <div class="header-logo">
+                <a href="https://www.goabstract.com/" target="_blank" id="abstract-logo">
+                    Abstract
+                </a>
+                <a href="https://help.abstract.com/hc/en-us" target="_blank" id="help-logo">Help Center</a>
             </div>
-            <div class="searchBar min">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="header-signin">
+                <button id="header-submit" type="submit">Submit a request</button>
+                <button type="button" value="Sign in" name="signin" id="signin">Sign in</button>
+            </div>
+            <div class="searchbar">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="searchBar max">
-                <a href="#">Submit a request</a>
-                <button name="signin" value="Sign in">Sign in</button>
             </div>
         </div>
     </header>
-    <main>
+    <section role="searchbox" id="searchbox">
+        <p>How can we help?</p>
+        <input type="text" name="search" placeholder="Search" id="search-input">
+    </section>
 
-        <!-- Top -->
-        <div class="top">
-            <h2>How can we help?</h2>
-            <div class="input-field">
-                <input type="search" name="search" placeholder="Search" class="search">
-            </div>
-        </div>
-
-        <!-- Content -->
-        <div class="content">
-            <section class="content-container">
-                <div class="image">
-                    <img src="document.png">
+    <!-- Main section -->
+    <main role="main">
+        <section role="main" id="main-cont">
+            <article id="document">
+                <div class="main-img">
+                    <img src="/images/document.png" alt="" id="document-img">
                 </div>
-                <div class="section-container">
-                    <p class="header">Using Abstract</p>
-                    <p>Abstract lets you manage, version and document your designs in one place.</p>
-                    <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract" target="_blank">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                <div class="main-text">
+                    <h2>Using Abstract</h2>
+                    <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                    <a href="https://help.abstract.com/hc/en-us/categories/360005436612-Using-Abstract" target="_blank">Learn More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-            </section>
-            <section class="content-container">
-                <div class="image">
-                    <img src="manage.png">
+            </article>
+            <article id="manage">
+                <div class="main-img">
+                    <img src="/images/manage.png" alt="" id="manage-img">
                 </div>
-                <div class="section-container">
-                    <p class="header">Manage your account</p>
-                    <p>Configure your account settings, such as your email, profile details and password.</p>
-                    <a href="https://help.abstract.com/hc/en-us/categories/360005449431-Manage-your-account" target="_blank">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                <div class="main-text">
+                    <h2>Manage your account</h2>
+                    <p>Configure your account settings, such as your email, profile details, and password.</p>
+                    <a href="https://help.abstract.com/hc/en-us/categories/360005449431-Manage-your-account" target="_blank">Learn More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-            </section>
-            <section class="content-container">
-                <div class="image">
-                    <img src="teams.png">
+            </article>
+            <article id="teams">
+                <div class="main-img">
+                    <img src="/images/teams.png" alt="" id="teams-img">
                 </div>
-                <div class="section-container">
-                    <p class="header">Manage organizations, teams, and projects</p>
-                    <p>Use Abstract organizations, teams and projects to organize your people and your work.</p>
-                    <a href="https://help.abstract.com/hc/en-us/categories/360005449531-Manage-organizations-teams-and-projects" target="_blank">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                <div class="main-text">
+                    <h2>Manage organizations, teams, and projects</h2>
+                    <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                    <a href="https://help.abstract.com/hc/en-us/categories/360005449531-Manage-organizations-teams-and-projects" target="_blank">Learn More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-            </section>
-            <section class="content-container">
-                <div class="image">
-                    <img src="bills.png">
+            </article>
+            <article id="billing">
+                <div class="main-img">
+                    <img src="/images/bills.png" alt="" id="bills-img">
                 </div>
-                <div class="section-container">
-                    <p class="header">Manage billing</p>
+                <div class="main-text">
+                    <h2>Manage billing</h2>
                     <p>Change subscriptions and payment details.</p>
-                    <a href="https://help.abstract.com/hc/en-us/categories/360005436672-Manage-billing" target="_blank">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="https://help.abstract.com/hc/en-us/categories/360005436672-Manage-billing" target="_blank">Learn More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-            </section>
-            <section class="content-container">
-                <div class="image">
-                    <img src="authn.png">
+            </article>
+            <article id="authn">
+                <div class="main-img">
+                    <img src="/images/authn.png" alt="" id="authn-img">
                 </div>
-                <div class="section-container">
-                    <p class="header">Authenticate to Abstract</p>
-                    <p>Set up and configure SSO, SCIM and Just-in-Time provisioning.</p>
-                    <a href="https://help.abstract.com/hc/en-us/categories/360005436592-Authenticate-to-Abstract" target="_blank">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                <div class="main-text">
+                    <h2>Authenticate to Abstract</h2>
+                    <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                    <a href="https://help.abstract.com/hc/en-us/categories/360005436592-Authenticate-to-Abstract" target="_blank">Learn More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-            </section>
-            <section class="content-container">
-                <div class="image">                
-                    <img src="support.png">
+            </article>
+            <article id="support">
+                <div class="main-img">
+                    <img src="/images/support.png" alt="" id="support-img">
                 </div>
-                <div class="section-container">
-                    <p class="header">Abstract support</p>
+                <div class="main-text">
+                    <h2>Abstract support</h2>
                     <p>Get in touch with a human.</p>
-                    <a href="https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support" target="_blank">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support" target="_blank">Learn More
+                        <i class="fa-solid fa-angles-right"></i>
+                    </a>
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content abstract">
-                <p class="header">Abstract</p>
-                <ul>
-                    <li><a href="#">Start Trial</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Download</a></li>
-                </ul>
+    <footer>
+        <div class="footer-cont">
+            <div class="footer-list">
+                <div class="list">
+                    <ul class="abstract">
+                        <h3>Abstract</h3>
+                        <li><a href="https://app.abstract.com/start-branches-trial" target="_blank">Start Trial</a></li>
+                        <li><a href="https://www.abstract.com/pricing" target="_blank">Pricing</a></li>
+                        <li><a href="https://app.abstract.com/download" target="_blank">Download</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul class="resource">
+                        <h3>Resource</h3>
+                        <li><a href="https://www.abstract.com/blog" target="_blank">Blog</a></li>
+                        <li><a href="https://www.abstract.com/help" target="_blank">Help Center</a></li>
+                        <li><a href="https://www.abstract.com/release-notes" target="_blank">Release Notes</a></li>
+                        <li><a href="https://status.abstract.com/" target="_blank">Status</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul class="community">
+                        <h3>Community</h3>
+                        <li><a href="https://twitter.com/goabstract" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/company/17950473/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://facebook.com/Abstract/" target="_blank">Facebook</a></li>
+                        <li><a href="https://dribbble.com/abstract" target="_blank">Dribble</a></li>
+                        <li><a href="https://www.abstract.com/podcast" target="_blank">Podcast</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul class="company">
+                        <h3>Company</h3>
+                        <li><a href="https://www.abstract.com/about" target="_blank">About Us</a></li>
+                        <li><a href="https://abstract.breezy.hr/" target="_blank">Careers</a></li>
+                        <li><a href="https://www.abstract.com/legal" target="_self">Legal</a></li>
+                        <h4>Contact Us</h4>
+                        <a href="mailto:basseybnzr@gmail.com" target="_blank">basseybnzr@gmail.com</a>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-content resources">
-                <p class="header">Resources</p>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Release Notes</a></li>
-                    <li><a href="#">Status</a></li>
-                </ul>
+            <div class="footer-copyright">
+                <p>© Copyright 2022 <br>
+                    Abstract Studio Design, Inc. <br>
+                    All rights reserved
+                </p>
             </div>
-            <div class="footer-content community">
-                <p class="header">Community</p>
-                <ul>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Dribble</a></li>
-                    <li><a href="#">Podcast</a></li>
-                </ul>
-            </div>
-            <div class="footer-content company">
-                <p class="header">Company</p>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Legal</a></li>
-                </ul>
-                <p class="contact">Contact Us</p>
-                <a href="mailto: basseybnzr@gmail.com">basseybnzr@gmail.com</a>
-            </div>
-            <div class="footer-content long">
-                <i class="fa-brands fa-autoprefixer"></i>
-                <p>Copyright 2022</p>
-                <p>Abstract Studio Design, Inc.</p>
-                <p>All rights reserved</p>
-            </div>
+            
+        </div>
+        <div class="help-btn">
+            <i class="fa-regular fa-circle-question"></i>
+            <a href="#">Help</a>
         </div>
     </footer>
 </body>
